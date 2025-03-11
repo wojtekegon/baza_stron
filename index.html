@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsywna Tabela</title>
+    <style>
+      /* Styl dla tabeli */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      /* Styl dla komórek i nagłówków */
+      th,
+      td {
+
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+
+      /* Responsywność */
+      @media screen and (max-width: 600px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+        thead tr {
+          display: none; /* Ukryj nagłówki kolumn na małych ekranach */
+        }
+        td {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+        }
+        td::before {
+          content: attr(
+            data-label
+          ); /* Wyświetl nagłówki kolumn jako etykiety */
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+
+<body style="margin: 0; background-color: #EBE4D6;" vlink="#800000" link="#800000" alink="#336600">
+
+<table style="width: 100%; border: 0; border-collapse: collapse; border-color: #111111;" cellspacing="0" cellpadding="10">
+	<tbody><tr>
+		<td style="width: 1%;"></td>
+		<td style="width: 99%; background-color: #FCF5E7;" class="text-center bold">
+			<a href="#"><span style="font-size: 200%;">Spis przydatnych stron</span></a>
+			<br><br>
+			© 2025 by ....<br>
+			<script async src="https://cse.google.com/cse.js?cx=9010897a7be06445b">
+</script>
+<div class="gcse-search"></div>
+
+		</td>
+	 </tr>
+    </tbody>
+</table>
+
+    <table  style="width: 100%; border: 2; border-collapse: collapse; border-color: #111111;" cellspacing="0" cellpadding="10">
+      <thead>
+	  <tr>
+          <th  style="background-color: #FCF5E7;" class="text-center bold">Codzienne</th>
+		  <th  style="background-color: #FCF5E7;" class="text-center bold">Kolumna 2</th>
+		  <th  style="background-color: #FCF5E7;" class="text-center bold">Praca</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Kolumna 1"><a href="https://mail.google.com">Poczta Gmail</td>
+          <td data-label="Kolumna 2">Wartość 2</td>
+          <td data-label="Kolumna 3"><a href="http://poczta.polskieradio.pl">Poczta PR</a></td>
+        </tr>
+		   <tr>
+          <td data-label="Kolumna 1">Wartość 1</td>
+          <td data-label="Kolumna 2">Wartość 2</td>
+          <td data-label="Kolumna 3"><a href="http://poczta.polskieradio.pl">Poczta PR</a></td>
+        </tr>
+      </tbody>
+    </table>
+	<br><br>
+	 <table  style="width: 100%; border: 2; border-collapse: collapse; border-color: #111111;" cellspacing="0" cellpadding="10">
+      <thead>
+	  <tr>
+          <th  style="background-color: #FCF5E7;" class="text-center bold">Nauka</th>
+		  <th  style="background-color: #FCF5E7;" class="text-center bold">Bankowość</th>
+		  <th  style="background-color: #FCF5E7;" class="text-center bold">Zakupy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Kolumna 1">Nauka</td>
+          <td data-label="Kolumna 2"><a href="https://login.ingbank.pl/mojeing/app/#login">Bank ING</a></td>
+          <td data-label="Kolumna 3"><a href="http://www.allegro.pl">Allegro</a></td>
+        </tr>
+        <tr>
+          <td data-label="Kolumna 1">Nauka</td>
+          <td data-label="Kolumna 2"><a href="https://online.mbank.pl/pl/Login">Mbank</a></td>
+          <td data-label="Kolumna 3"><a href="http://www.olx.pl">Olx</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
