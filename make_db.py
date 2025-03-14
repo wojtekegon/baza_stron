@@ -85,3 +85,5 @@ sql_shopping = """
   """
 mycursor.execute(sql_shopping)
 
+
+
