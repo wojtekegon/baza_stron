@@ -37,6 +37,8 @@ my_db = mysql.connector.connect(host = db_host,  user=db_user, password=db_pass,
 #mysql.connector.connect(host = db_host, database = db_name, user=db_user, password=db_pass, auth_plugin = 'mysql_native_password')
 
 mycursor = my_db.cursor()
+
+
 #mycursor.execute("INSERT INTO `moja_db1`.`bank` (`id`, `bank_name`, `site_adress`) VALUES ('5', 'bank5 ', 'adres bank5')")
 
 mycursor.execute("select * from bank")
